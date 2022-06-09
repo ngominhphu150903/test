@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Bài 16</title>
+    <script type="text/javascrip">
+      function capnhat(){
+
+      }
+    </script>
+  </head>
+  <body>
+    <div class="box"></div>
+    <h1 class="mauchu">Phunm</h1>
+    <h3 class="tieude">“Never live below your potential”</h3>
+    <p class="trangthai">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus
+      nulla delectus eos repudiandae in porro asperiores perspiciatis tenetur
+      adipisci qui non dolores, nesciunt iusto quo molestiae neque veritatis
+      labore.
+    </p>
+    <button class="thaydoi">Thay đổi</button>
+    <script>
+      function ShowColor(color) {
+        document.querySelector(".box").style.backgroundColor = color;
+        document.querySelector(".mauchu").style.color = color;
+        document.querySelector(".tieude").style.color = color;
+        document.querySelector(".trangthai").style.color = color;
+      }
+      document.querySelector(".thaydoi").addEventListener("click", function () {
+        ShowColor("green");
+      });
+    </script>
+  </body>
+</html>

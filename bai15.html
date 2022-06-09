@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 15</title>
+  </head>
+  <body>
+    <label for="" class="sh1">Số hạng 1 </label>
+    <input type="text" class="input-sh1" /> <br />
+    <label for="" class="sh2">Số hạng 2 </label>
+    <input type="text" class="input-sh2" /> <br />
+    <label for="" class="kq">Kết quả : </label>
+    <input type="text" class="input-kq" /> <br />
+    <button class="btn">Tính tổng</button>
+    <script>
+      document.querySelector(".btn").addEventListener("click", function () {
+        const sh1 = Number(document.querySelector(".input-sh1").value);
+        const sh2 = Number(document.querySelector(".input-sh2").value);
+        const total = sh1 + sh2;
+        document.querySelector(".input-kq").value = total;
+      });
+    </script>
+  </body>
+</html>
